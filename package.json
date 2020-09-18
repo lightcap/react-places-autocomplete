@@ -1,10 +1,9 @@
 {
-  "name": "react-places-autocomplete",
+  "name": "@lightcap/react-places-autocomplete",
   "version": "7.3.0",
   "description": "A React component for Google Maps Places Autocomplete",
   "main": "dist/index.js",
   "scripts": {
-    "commit": "git-cz",
     "test": "jest /src",
     "test:update": "jest /src --updateSnapshot",
     "test:watch": "jest /src --watch",
@@ -29,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kenny-hibino/react-places-autocomplete.git"
+    "url": "https://github.com/lightcap/react-places-autocomplete.git"
   },
   "keywords": [
     "React.js",
@@ -55,9 +54,9 @@
   "author": "Ken Hibino <ken.hibino7@gmail.com> (http://www.kenhibino.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kenny-hibino/react-places-autocomplete/issues"
+    "url": "https://github.com/lightcap/react-places-autocomplete/issues"
   },
-  "homepage": "https://github.com/kenny-hibino/react-places-autocomplete#readme",
+  "homepage": "https://github.com/lightcap/react-places-autocomplete#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-eslint": "8.2.2",
@@ -70,9 +69,7 @@
     "babel-preset-react": "^6.23.1",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "6.26.0",
-    "commitizen": "2.8.2",
     "copy-webpack-plugin": "^4.0.1",
-    "cz-conventional-changelog": "1.1.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.3",
@@ -97,9 +94,6 @@
     "webpack-dev-server": "^1.16.2"
   },
   "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    },
     "ghooks": {
       "pre-commit": "npm run test"
     }
@@ -127,6 +121,7 @@
     ],
     "collectCoverageFrom": [
       "src/*.js"
-    ]
+    ],
+    "testURL": "https://localhost/"
   }
 }
